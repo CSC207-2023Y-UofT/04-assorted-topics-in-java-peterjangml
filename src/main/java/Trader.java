@@ -65,7 +65,7 @@ public class Trader<T> {
      *
      *       We will call this in exchangeMoney().
      */
-    public void getSellingPrice(T object) {
+    public int getSellingPrice(T object) {
         if (object instanceof Tradable) {
             return object.getPrice();
         }
